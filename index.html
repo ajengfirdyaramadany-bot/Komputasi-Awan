@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Ajeng Firdya Ramadany - Statistika & Sains Data</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: #06090e;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.12) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.12) 0px, transparent 50%);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 16px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Foto Profil Halo Cyan */
+        .avatar-wrapper {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #38bdf8;
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+        }
+
+        /* Badge Tag */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(14, 165, 233, 0.12);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            color: #38bdf8;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        /* Header Text */
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .sub-title {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .tagline {
+            color: #94a3b8;
+            font-size: 0.92rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        /* Skill Pills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 28px;
+            max-width: 440px;
+        }
+
+        .skill-pill {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 6px 14px;
+            border-radius: 12px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #f1f5f9;
+        }
+
+        /* Link Buttons */
+        .links-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 16px 20px;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: all 0.25s ease;
+            backdrop-filter: blur(8px);
+        }
+
+        .link-card:hover {
+            background: rgba(30, 41, 59, 0.8);
+            border-color: rgba(56, 189, 248, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .link-content {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .link-icon {
+            font-size: 1.35rem;
+            color: #38bdf8;
+            width: 24px;
+            text-align: center;
+        }
+
+        .link-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .arrow-icon {
+            font-size: 0.85rem;
+            color: #64748b;
+            transition: transform 0.25s ease, color 0.25s ease;
+        }
+
+        .link-card:hover .arrow-icon {
+            color: #38bdf8;
+            transform: translateX(3px);
+        }
+
+        /* Footer */
+        footer {
+            font-size: 0.8rem;
+            color: #64748b;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Foto Profil Placeholder -->
+        <div class="avatar-wrapper">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop" alt="Ajeng Firdya Ramadany" class="avatar">
+        </div>
+
+        <!-- Badge Jurusan -->
+        <div class="badge">
+            <i class="fa-solid fa-chart-pie"></i> Statistika & Sains Data
+        </div>
+
+        <!-- Identitas Utama -->
+        <h1>Ajeng Firdya Ramadany</h1>
+        <p class="sub-title">Mahasiswa Statistika & Sains Data</p>
+        <p class="tagline">Passionate in Data Analytics & Machine Learning</p>
+
+        <!-- List Skill / Tag -->
+        <div class="skills-container">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">R Programming</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Data Visualization</span>
+            <span class="skill-pill">Statistics</span>
+        </div>
+
+        <!-- Tombol Tautan Aktif -->
+        <div class="links-wrapper">
+            <!-- GitHub -->
+            <a href="https://github.com/ajengfirdyaramadany-bot" target="_blank" class="link-card">
+                <div class="link-content">
+                    <i class="fa-brands fa-github link-icon"></i>
+                    <span class="link-title">Portofolio Data (GitHub)</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+
+            <!-- Kaggle -->
+            <a href="https://kaggle.com" target="_blank" class="link-card">
+                <div class="link-content">
+                    <i class="fa-solid fa-k link-icon"></i>
+                    <span class="link-title">Profil & Notebooks Kaggle</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/ajeng-firdya-ramadany-3945402bb" target="_blank" class="link-card">
+                <div class="link-content">
+                    <i class="fa-brands fa-linkedin-in link-icon"></i>
+                    <span class="link-title">Profil LinkedIn</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/ajenngffr" target="_blank" class="link-card">
+                <div class="link-content">
+                    <i class="fa-brands fa-instagram link-icon"></i>
+                    <span class="link-title">Instagram</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:ajengfirdyaramadany@gmail.com" class="link-card">
+                <div class="link-content">
+                    <i class="fa-regular fa-envelope link-icon"></i>
+                    <span class="link-title">Hubungi via Email</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 <strong>Ajeng Firdya Ramadany</strong></p>
+            <p>Hosted on GitHub Pages</p>
+        </footer>
+    </div>
+
+</body>
+</html>
